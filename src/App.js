@@ -173,7 +173,7 @@ function App() {
 
     
     return(
-        <div className='wrapper'>
+        <div role={'main'} className='wrapper'>
             {currentUser  && comments.map((comment )=> {
                 return (
                     
