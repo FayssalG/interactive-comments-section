@@ -5,7 +5,7 @@ export default function EditInput({user , setEdit , value , setEditing , editedI
     return(
         <div className="comment-input edit-input">
             <div className="image"><img alt="profile picture" src={user.image.png}></img></div>
-            <textarea defaultValue={value}  placeholder="Add a comment..." className={"new-comment-area edit-comment-area"} type='text-area'></textarea>
+            <textarea defaultValue={value}  placeholder="Add a comment..." className={"new-comment-area edit-comment-area"} ></textarea>
             <button className='send' onClick={()=>{setEdit(document.querySelector('.edit-comment-area').value , editedId, editedType , commentId) ; setEditing(false)}}>Update</button>
         </div>
     )

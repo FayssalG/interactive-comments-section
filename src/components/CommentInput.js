@@ -49,7 +49,7 @@ export default function CommentInput({user , buttonType , commentId , replyingTo
     return(
         <div className="comment-input">
             <div className="image"><img alt="profile picture" src={user.image.png}></img></div>
-            <textarea defaultValue={replyingTo ?'@'+ replyingTo+' ' : ''}  placeholder="Add a comment..." className={ replyingTo? 'reply-comment-area':"new-comment-area"} type='text-area'></textarea>
+            <textarea defaultValue={replyingTo ?'@'+ replyingTo+' ' : ''}  placeholder="Add a comment..." className={ replyingTo? 'reply-comment-area':"new-comment-area"}></textarea>
             <button className='send' onClick={replyingTo!=undefined ? ()=>{setReply(newReply() , commentId) ; setReplying(false) ;} : ()=>{setComment(newComment()) ; clearInput()}}>{buttonType}</button>
         </div>
     )
