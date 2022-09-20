@@ -1,0 +1,86 @@
+:root{
+    --font-family: 'Rubik';
+    --moderate-blue : hsl(238, 40%, 52%);
+    --light-gray: hsl(223, 19%, 93%);
+    --grayish-blue: hsl(211, 10%, 45%);
+    --dark-blue: hsl(212, 24%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-Gray :hsl(228, 33%, 97%);
+    --soft-red: hsl(358, 79%, 66%);
+    --light-grayish-blue: hsl(239, 57%, 85%);
+    --pale-red: hsl(357, 100%, 86%);
+}
+
+a{
+    text-decoration: none;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    line-height: 24px;
+    font-family: var(--font-family);
+    background-color: var(--very-light-Gray);
+}
+
+
+#root{
+    min-width: 327px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.comment-input , .comment-container {
+    min-height : 160px;
+    width: 100%;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.168);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.swal-actions{
+    flex-direction: row-reverse;
+}
+.swal-container button{
+    perspective: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+}
+.swal-container h2 , .swal-container div{
+    text-align: left;
+}
+
+
+
+@keyframes fade {
+    0%{
+        transform: translateY(-40px);
+        opacity: 0%;
+    }
+
+    
+
+    100%{
+        transform: translateY(0);
+        opacity: 100;
+    }
+}

@@ -1,0 +1,173 @@
+
+button{
+    font-size: inherit;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
+
+
+.comment-container{
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--white);
+    border-radius: 5px;
+    display:flex;
+    align-items : center; 
+    animation: fade 400ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.reply-container .mention{
+    color: var(--moderate-blue);
+    font-weight: 700;
+}
+
+.comment{
+    display: flex;
+    flex-direction : row-reverse;
+    margin: 0 10px;
+    width: 100%;
+    position : relative;
+}
+
+.content{
+    width : 90%;
+    margin:0 20px;
+}
+
+.content p {
+    overflow-wrap: break-word;
+    color: var(--grayish-blue);
+}
+
+.content .top{
+    display: flex;
+    flex-direction : row;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.top .name{
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.top .you{
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--moderate-blue);
+    padding: 0 7px;
+    line-height: 20px;
+    border-radius: 2px;
+    margin-right:  10px;
+}
+
+.top .date{
+    color: var(--grayish-blue);
+}
+
+.top .image{
+    width: 40px;
+   
+}
+
+.reply-to{
+    font-weight: 700;
+    color: var(--moderate-blue);
+}
+
+
+.image img{
+    width:100%;
+}
+
+.vote{
+    font-size: 20px;
+    display: flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content: space-evenly;
+    border-radius: 9px;
+    width: 50px;
+    height: 120px;
+    background-color: var(--very-light-Gray);
+}
+
+.vote button{
+    font-size: 20px;
+    color: var(--light-grayish-blue);
+}
+
+.vote button:hover{
+    color: var(--moderate-blue);
+}
+
+.vote p {
+    color: var(--moderate-blue);
+    font-weight: 700;
+}
+
+
+.edit-delete-reply{
+    position: absolute;
+    right: 0;
+    color: var(--moderate-blue);
+}
+
+.edit-delete-reply button {
+    font-weight: 700;
+    transition: opacity ease 200ms;
+
+}
+
+.edit-delete-reply img {
+    margin-right: 7px;
+}
+
+.edit , .reply{
+    color: var(--moderate-blue);
+}
+
+.edit:hover , .reply:hover{
+    opacity: 70%;
+}
+
+.delete{
+    color: var(--soft-red);
+}
+.delete:hover{
+    opacity: 70%;
+}
+
+.edit{
+    margin: 0 10px;
+}
+
+
+
+
+
+@media (max-width: 510px){
+    .comment{
+        flex-direction : column;
+    }
+
+    .content{
+        margin:20px 0;
+    }
+
+    .vote{
+        flex-direction : row;
+        width:100px;
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .edit-delete-reply{
+        bottom:5px;
+    }
+}
