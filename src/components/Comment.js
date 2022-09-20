@@ -177,7 +177,7 @@ function Comment({ calcDate ,currentUser  , commentData  , setReply , setEdit , 
                         }
                         {currentUser.username!=commentData.user.username &&
                             <button className="reply" onClick={()=>{setReplying(!isReplying) }}>
-                                <img alt='reply' src='../images/icon-reply.svg'></img>
+                                <img alt={'reply to '+commentData.user.username} src='../images/icon-reply.svg'></img>
                                 Reply
                             </button>
                         }

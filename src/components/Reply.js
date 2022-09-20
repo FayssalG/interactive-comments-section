@@ -61,7 +61,7 @@ export default function Reply({ currentUser  ,setReply ,  reply  ,commentId , se
 
                         {currentUser.username!=reply.user.username &&
                             <button className="reply" onClick={()=>setReplying(!isReplying)}>
-                                <img alt='reply' src='../images/icon-reply.svg'></img>
+                                <img alt={'reply to '+reply.user.username} src='../images/icon-reply.svg'></img>
                                 Reply
                             </button>
                             }                    
