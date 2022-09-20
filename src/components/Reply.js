@@ -30,7 +30,7 @@ export default function Reply({ currentUser  ,setReply ,  reply  ,commentId , se
                 <div className='comment'>
                     <div className='content'> 
                         <div className='top'>
-                            <div className='image'><img src={reply.user.image.png}></img></div>
+                            <div className='image'><img alt="profile picture" src={reply.user.image.png}></img></div>
                             <span className='name'>{reply.user.username}</span>
                             {currentUser.username==reply.user.username && <span className='you'>you</span>}
                             <span className='date'>{calcDate(reply.createdAt)}</span>
@@ -48,12 +48,12 @@ export default function Reply({ currentUser  ,setReply ,  reply  ,commentId , se
                         {currentUser.username==reply.user.username && 
                             <>
                             <button className="delete"  onClick={()=>{setDeleting(!isDeleting)}}>
-                                <img src='../images/icon-delete.svg'></img>
+                                <img alt="delete" src='../images/icon-delete.svg'></img>
                                 Delete
                             </button>
 
                             <button className="edit" onClick={()=>{setEditing(!isEditing) }} >
-                                <img src='../images/icon-edit.svg'></img>
+                                <img alt="edit" src='../images/icon-edit.svg'></img>
                                 Edit
                             </button>
                             </>
@@ -61,7 +61,7 @@ export default function Reply({ currentUser  ,setReply ,  reply  ,commentId , se
 
                         {currentUser.username!=reply.user.username &&
                             <button className="reply" onClick={()=>setReplying(!isReplying)}>
-                                <img src='../images/icon-reply.svg'></img>
+                                <img alt='reply' src='../images/icon-reply.svg'></img>
                                 Reply
                             </button>
                             }                    

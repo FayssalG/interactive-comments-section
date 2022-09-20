@@ -147,7 +147,7 @@ function Comment({ calcDate ,currentUser  , commentData  , setReply , setEdit , 
                 <div className='comment'>
                     <div className='content'> 
                         <div className='top'>
-                            <div className='image'><img src={commentData.user.image.png}></img></div>
+                            <div className='image'><img alt='profile picture' src={commentData.user.image.png}></img></div>
                             <span className='name'>{commentData.user.username}</span>
                             {currentUser.username==commentData.user.username && <span className='you'>you</span>}
                             <span className='date'>{calcDate(commentData.createdAt)}</span>
@@ -166,18 +166,18 @@ function Comment({ calcDate ,currentUser  , commentData  , setReply , setEdit , 
                         {currentUser.username==commentData.user.username &&
                             <>
                             <button className="delete" onClick={()=>{setDeleting(!isDeleting)}} >
-                                <img src='../images/icon-delete.svg'></img>
+                                <img alt='delete' src='../images/icon-delete.svg'></img>
                                 Delete
                             </button> 
                             <button className="edit"  onClick={()=>{setEditing(!isEditing)}} >
-                            <img src='../images/icon-edit.svg'></img>
+                            <img alt='edit' src='../images/icon-edit.svg'></img>
                             Edit
                             </button>
                             </>
                         }
                         {currentUser.username!=commentData.user.username &&
                             <button className="reply" onClick={()=>{setReplying(!isReplying) }}>
-                                <img src='../images/icon-reply.svg'></img>
+                                <img alt='reply' src='../images/icon-reply.svg'></img>
                                 Reply
                             </button>
                         }
