@@ -11,11 +11,7 @@ This is a solution to the [Interactive comments section challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 
 
 ## Overview
@@ -52,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-I used pretty basic stuff like useState and useEffect , of course I could have used redux or the useContext and useReducer hooks for a better state management but I wanted to work with what I already know to push my self a little bit and to further understand the basics react . I also did not use create-react-app I set it up the from scratch 
+I used pretty basic stuff like useState and useEffect , of course I could have used redux or the useContext and useReducer hooks for a better state management but I wanted to work with what I already know to push my self a little bit and to further understand the basics react . I also did not use create-react-app I set it up the from scratch . so yeah I learned a lot of things 
 
 
 ## Author
