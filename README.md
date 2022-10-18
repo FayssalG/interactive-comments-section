@@ -16,7 +16,7 @@ This is a solution to the [Interactive comments section challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -45,27 +45,21 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/FayssalG/interactive-comments-section)
+- Live Site URL: [live site](https://interactive-comments-section-nine.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I used pretty basic stuff like useState and useEffect , of course I could have used redux or the useContext and useReducer hooks for a better state management but I wanted to work with what I already know to push my self I little bit and to further understand the basics react 
 
 To see how you can add code snippets, see below:
 
