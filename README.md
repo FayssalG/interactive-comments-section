@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution](https://github.com/FayssalG/interactive-comments-section)
-- Live Site URL: [live site](https://interactive-comments-section-nine.vercel.app/)
+- Live Site URL: [live site](https://interactive-comments-section-three.vercel.app/)
 
 ## My process
 
